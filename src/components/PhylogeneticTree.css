@@ -1,0 +1,39 @@
+.phylogeneticTreeContainer {
+    height: 100%;
+    width: 100%;
+	overflow: hidden;
+}
+
+.node circle {
+	fill: #1C9DD7;
+	stroke: #045B7D;
+	stroke-width: 1.5px;
+}
+
+.node text {
+	font-size: 11px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: black;
+	fill: black;
+}
+
+.node {
+	cursor: pointer;
+}
+
+path.link {
+	fill: none;
+	stroke: #26222A;
+	stroke-width: 1.5px;
+}
+
+span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #F4F4F4;
+	text-shadow: 0 1px 4px black;
+	float: right;
+}
+
+text {
+	transform: translateX(2px);
+}

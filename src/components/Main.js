@@ -18,12 +18,12 @@ export default ({ filetreeContent, locationContent, goBack }) => {
   if (errors.length) return <Errors errors={errors} goBack={goBack} />
 
   return (
-    <div className="container">
+    <div className="mainContainer">
       <Map
         locationContent={locationContent}
         handleToogleModal={(b) => setShowModal(b)}
       />
-      {showModal && <TreeModal filetreeContent={filetreeContent} />}
+      {showModal && <TreeModal filetreeContent={filetreeContent} closeModal={() => setShowModal(false)} />}
     </div>
   );
 };

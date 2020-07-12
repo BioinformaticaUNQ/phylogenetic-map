@@ -1,0 +1,21 @@
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.button-tree {
+    position: absolute;
+    right: 5px;
+    bottom: 75px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+    border-radius: 3px;
+}
+
+.button-tree:hover {
+    background-color: #a3a3a3;
+}
