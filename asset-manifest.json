@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/phylogenetic-map/static/css/main.23897225.chunk.css",
+    "main.js": "/phylogenetic-map/static/js/main.038316c0.chunk.js",
+    "main.js.map": "/phylogenetic-map/static/js/main.038316c0.chunk.js.map",
+    "runtime-main.js": "/phylogenetic-map/static/js/runtime-main.0541c221.js",
+    "runtime-main.js.map": "/phylogenetic-map/static/js/runtime-main.0541c221.js.map",
+    "static/js/2.353f35ef.chunk.js": "/phylogenetic-map/static/js/2.353f35ef.chunk.js",
+    "static/js/2.353f35ef.chunk.js.map": "/phylogenetic-map/static/js/2.353f35ef.chunk.js.map",
+    "index.html": "/phylogenetic-map/index.html",
+    "precache-manifest.f4b28a45a18f954087c141ee726daf5e.js": "/phylogenetic-map/precache-manifest.f4b28a45a18f954087c141ee726daf5e.js",
+    "service-worker.js": "/phylogenetic-map/service-worker.js",
+    "static/css/main.23897225.chunk.css.map": "/phylogenetic-map/static/css/main.23897225.chunk.css.map",
+    "static/js/2.353f35ef.chunk.js.LICENSE.txt": "/phylogenetic-map/static/js/2.353f35ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0541c221.js",
+    "static/js/2.353f35ef.chunk.js",
+    "static/css/main.23897225.chunk.css",
+    "static/js/main.038316c0.chunk.js"
+  ]
+}
