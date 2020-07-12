@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/phylogenetic-map/static/css/main.23897225.chunk.css",
-    "main.js": "/phylogenetic-map/static/js/main.038316c0.chunk.js",
-    "main.js.map": "/phylogenetic-map/static/js/main.038316c0.chunk.js.map",
+    "main.css": "/phylogenetic-map/static/css/main.566df26a.chunk.css",
+    "main.js": "/phylogenetic-map/static/js/main.44993a33.chunk.js",
+    "main.js.map": "/phylogenetic-map/static/js/main.44993a33.chunk.js.map",
     "runtime-main.js": "/phylogenetic-map/static/js/runtime-main.0541c221.js",
     "runtime-main.js.map": "/phylogenetic-map/static/js/runtime-main.0541c221.js.map",
-    "static/js/2.353f35ef.chunk.js": "/phylogenetic-map/static/js/2.353f35ef.chunk.js",
-    "static/js/2.353f35ef.chunk.js.map": "/phylogenetic-map/static/js/2.353f35ef.chunk.js.map",
+    "static/css/2.da3a6d41.chunk.css": "/phylogenetic-map/static/css/2.da3a6d41.chunk.css",
+    "static/js/2.6289da65.chunk.js": "/phylogenetic-map/static/js/2.6289da65.chunk.js",
+    "static/js/2.6289da65.chunk.js.map": "/phylogenetic-map/static/js/2.6289da65.chunk.js.map",
     "index.html": "/phylogenetic-map/index.html",
-    "precache-manifest.f4b28a45a18f954087c141ee726daf5e.js": "/phylogenetic-map/precache-manifest.f4b28a45a18f954087c141ee726daf5e.js",
+    "precache-manifest.56cffadd6f4d87a8f05a40f18330ea51.js": "/phylogenetic-map/precache-manifest.56cffadd6f4d87a8f05a40f18330ea51.js",
     "service-worker.js": "/phylogenetic-map/service-worker.js",
-    "static/css/main.23897225.chunk.css.map": "/phylogenetic-map/static/css/main.23897225.chunk.css.map",
-    "static/js/2.353f35ef.chunk.js.LICENSE.txt": "/phylogenetic-map/static/js/2.353f35ef.chunk.js.LICENSE.txt"
+    "static/css/2.da3a6d41.chunk.css.map": "/phylogenetic-map/static/css/2.da3a6d41.chunk.css.map",
+    "static/css/main.566df26a.chunk.css.map": "/phylogenetic-map/static/css/main.566df26a.chunk.css.map",
+    "static/js/2.6289da65.chunk.js.LICENSE.txt": "/phylogenetic-map/static/js/2.6289da65.chunk.js.LICENSE.txt",
+    "static/media/github.svg": "/phylogenetic-map/static/media/github.76d344f0.svg",
+    "static/media/icon.svg": "/phylogenetic-map/static/media/icon.67a5203a.svg",
+    "static/media/tree.svg": "/phylogenetic-map/static/media/tree.db21f93f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0541c221.js",
-    "static/js/2.353f35ef.chunk.js",
-    "static/css/main.23897225.chunk.css",
-    "static/js/main.038316c0.chunk.js"
+    "static/css/2.da3a6d41.chunk.css",
+    "static/js/2.6289da65.chunk.js",
+    "static/css/main.566df26a.chunk.css",
+    "static/js/main.44993a33.chunk.js"
   ]
 }
