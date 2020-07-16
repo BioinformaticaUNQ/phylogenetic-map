@@ -4,32 +4,36 @@ import Errors from './Errors';
 import TreeModal from './TreeModal';
 
 import "./Main.css";
+import { useStoreState } from "easy-peasy";
 
 const checkContents = (filetreeContent, locationContent) => [];
 
-export default ({ filetreeName, filetreeContent, locationContent, goBack }) => {
+ const Main = ({ goBack }) => {
+  const { treefile, locations } = useStoreState(state => state.files);
   const [showModal, setShowModal] = useState(false);
   const [errors, setErrors] = useState([]);
 
   useEffect(() => {
-    setErrors(checkContents(filetreeContent, locationContent))
-  }, [filetreeContent, locationContent]);
+    setErrors(checkContents(treefile.content, locations.content))
+  }, [treefile, locations]);
 
   if (errors.length) return <Errors errors={errors} goBack={goBack} />
 
   return (
     <div className="mainContainer">
       <Map
-        filetreeName={filetreeName}
-        locationContent={locationContent}
+        filetreeName={treefile.name}
+        locationContent={locations.content}
         handleToogleModal={(b) => setShowModal(b)}
       />
       {showModal && (
         <TreeModal
-          filetreeContent={filetreeContent}
+          filetreeContent={treefile.content}
           closeModal={() => setShowModal(false)}
         />
       )}
     </div>
   );
 };
+
+export default Main;

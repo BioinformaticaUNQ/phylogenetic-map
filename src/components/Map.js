@@ -5,6 +5,7 @@ import geoLocationService from "../service/geoLocationService";
 import { useState, useEffect } from "react";
 import TargetSVG from "./TargetSVG";
 import tree from '../icons/tree.svg';
+import downloadMap from '../icons/downloadMap.svg';
 import "./Map.css";
 
 const getRandomColor = () => {
@@ -31,7 +32,7 @@ const filteredLocations = (locations) => {
   }, []);
 };
 
-export default ({ filetreeName, locationContent, handleToogleModal }) => {
+const Map = ({ filetreeName, locationContent, handleToogleModal }) => {
   const [allLocations, setAllLocations] = useState([]);
 
   useEffect(() => {
@@ -89,7 +90,7 @@ export default ({ filetreeName, locationContent, handleToogleModal }) => {
 
     // Legend styles
     chart.legend.paddingLeft = 10;
-    chart.legend.paddingRight = 20;
+    chart.legend.paddingRight = 10;
     chart.legend.marginBottom = 15;
     chart.legend.width = am4core.percent(40);
     chart.legend.valign = "bottom";
@@ -119,9 +120,11 @@ export default ({ filetreeName, locationContent, handleToogleModal }) => {
       <div className="button-tree" onClick={() => handleToogleModal(true)}>
         <img src={tree} alt="phylogeneticTree" className="icon" />
       </div>
-      <div className="button-dowload-map" onClick={() => handleDownloadMap()}>
-        <img src={tree} alt="phylogeneticTree" className="icon" />
+      <div className="button-download-map" onClick={() => handleDownloadMap()}>
+        <img src={downloadMap} alt="downloadMap" className="icon" />
       </div>
     </>
   );
 };
+
+export default Map;

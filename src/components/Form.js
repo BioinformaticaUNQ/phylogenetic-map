@@ -1,70 +1,46 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import "./Form.css";
+import Input from "./Input";
+import { useStoreState, useStoreActions } from "easy-peasy";
 
-export default ({ setFiletreeContent, setLocationContent, generateMap }) => {
-  const [treefile, setTreefile] = useState("");
-  const [locationfile, setLocationfile] = useState("");
+const Form = ({ generateMap }) => {
+  const { treefile, locations } = useStoreState(state => state.files);
+  const { addTreefile, addLocations } = useStoreActions(actions => actions.files)
 
-  const treeFileInputRef = useRef(null);
-  const locationFileInputRef = useRef(null);
 
-  const handleFileSelected = (file, setName, setContent) => {
-    setName(file.name);
-    const fileReader = new FileReader();
-    fileReader.onload = (e) => setContent(file.name, e.target.result);
-    fileReader.readAsText(file);
+  const handleFileSelected = update => event => {
+    if (event.target.files.length) {
+      const file = event.target.files[0];
+      const fileReader = new FileReader();
+      fileReader.onload = (e) => update({ name: file.name, content: e.target.result});
+      fileReader.readAsText(file);
+    }
   };
 
-  const handleTreefile = (e) =>
-    handleFileSelected(e.target.files[0], setTreefile, setFiletreeContent);
-  const handleLocationFile = (e) =>
-    handleFileSelected(e.target.files[0], setLocationfile, setLocationContent);
+  const handleTreefile = handleFileSelected(addTreefile);
+  const handleLocationFile = handleFileSelected(addLocations);
 
   return (
     <div className="form">
-      <div className={`formRow ${treefile && "selectedFile"}`}>
-        <label htmlFor="treefile" className="label">
-          Treefile: {treefile || "Select file"}
-        </label>
-        <span
-          htmlFor="treefile"
-          className="btn btnUpload"
-          onClick={() => treeFileInputRef.current.click()}
-        >
-          Upload
-        </span>
-        <input
-          id="treefile"
-          type="file"
-          ref={treeFileInputRef}
-          className="inputFile"
-          accept=".treefile"
-          onChange={handleTreefile}
-        />
-      </div>
-      <div className={`formRow ${locationfile && "selectedFile"}`}>
-        <label htmlFor="locationfile" className="label">
-          Treefile: {locationfile || "Select file"}
-        </label>
-        <span
-          htmlFor="locationfile"
-          className="btn btnUpload"
-          onClick={() => locationFileInputRef.current.click()}
-        >
-          Upload
-        </span>
-        <input
-          id="locationfile"
-          type="file"
-          className="inputFile"
-          accept=".json"
-          ref={locationFileInputRef}
-          onChange={handleLocationFile}
-        />
-      </div>
+      <Input
+        value={treefile.name}
+        htmlFor="treefile"
+        label="Treefile"
+        onChange={handleTreefile}
+        accept=".treefile"
+      />
+      <Input
+        value={locations.name}
+        htmlFor="location"
+        label="Location"
+        onChange={handleLocationFile}
+        accept=".json"
+      />
       <span className="btn btnPrimary" onClick={generateMap}>
         Generate Map
       </span>
     </div>
   );
 };
+
+export default Form;
