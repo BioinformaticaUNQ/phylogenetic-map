@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a724d688c962120e6cd206e412f5ec5",
+    "revision": "3cd69e328f60a8e48c8619de189ed90d",
     "url": "/phylogenetic-map/index.html"
   },
   {
-    "revision": "2485681b46234f1b2b9d",
+    "revision": "5a662c8296edae579faf",
     "url": "/phylogenetic-map/static/css/2.da3a6d41.chunk.css"
   },
   {
-    "revision": "34957fcf556f1d990fec",
-    "url": "/phylogenetic-map/static/css/main.566df26a.chunk.css"
+    "revision": "efa8ed3914a013c7451d",
+    "url": "/phylogenetic-map/static/css/main.ca72661b.chunk.css"
   },
   {
-    "revision": "2485681b46234f1b2b9d",
-    "url": "/phylogenetic-map/static/js/2.6289da65.chunk.js"
+    "revision": "5a662c8296edae579faf",
+    "url": "/phylogenetic-map/static/js/2.8a373430.chunk.js"
   },
   {
-    "revision": "e8b0ae1bd2f59a85f300b3c60c50941a",
-    "url": "/phylogenetic-map/static/js/2.6289da65.chunk.js.LICENSE.txt"
+    "revision": "20145b3fb4df51cd9afdc10a3e9dcb91",
+    "url": "/phylogenetic-map/static/js/2.8a373430.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34957fcf556f1d990fec",
-    "url": "/phylogenetic-map/static/js/main.44993a33.chunk.js"
+    "revision": "efa8ed3914a013c7451d",
+    "url": "/phylogenetic-map/static/js/main.5476a3bd.chunk.js"
   },
   {
     "revision": "d496be679f79f0663edb",
     "url": "/phylogenetic-map/static/js/runtime-main.0541c221.js"
+  },
+  {
+    "revision": "abd052bd147f98c7cffeeffb3e577672",
+    "url": "/phylogenetic-map/static/media/downloadMap.abd052bd.svg"
   },
   {
     "revision": "76d344f08412543c74ccd1fb2493d607",

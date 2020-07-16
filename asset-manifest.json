@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/phylogenetic-map/static/css/main.566df26a.chunk.css",
-    "main.js": "/phylogenetic-map/static/js/main.44993a33.chunk.js",
-    "main.js.map": "/phylogenetic-map/static/js/main.44993a33.chunk.js.map",
+    "main.css": "/phylogenetic-map/static/css/main.ca72661b.chunk.css",
+    "main.js": "/phylogenetic-map/static/js/main.5476a3bd.chunk.js",
+    "main.js.map": "/phylogenetic-map/static/js/main.5476a3bd.chunk.js.map",
     "runtime-main.js": "/phylogenetic-map/static/js/runtime-main.0541c221.js",
     "runtime-main.js.map": "/phylogenetic-map/static/js/runtime-main.0541c221.js.map",
     "static/css/2.da3a6d41.chunk.css": "/phylogenetic-map/static/css/2.da3a6d41.chunk.css",
-    "static/js/2.6289da65.chunk.js": "/phylogenetic-map/static/js/2.6289da65.chunk.js",
-    "static/js/2.6289da65.chunk.js.map": "/phylogenetic-map/static/js/2.6289da65.chunk.js.map",
+    "static/js/2.8a373430.chunk.js": "/phylogenetic-map/static/js/2.8a373430.chunk.js",
+    "static/js/2.8a373430.chunk.js.map": "/phylogenetic-map/static/js/2.8a373430.chunk.js.map",
     "index.html": "/phylogenetic-map/index.html",
-    "precache-manifest.56cffadd6f4d87a8f05a40f18330ea51.js": "/phylogenetic-map/precache-manifest.56cffadd6f4d87a8f05a40f18330ea51.js",
+    "precache-manifest.9b5fad7757b0df4984f2f24ed78d1519.js": "/phylogenetic-map/precache-manifest.9b5fad7757b0df4984f2f24ed78d1519.js",
     "service-worker.js": "/phylogenetic-map/service-worker.js",
     "static/css/2.da3a6d41.chunk.css.map": "/phylogenetic-map/static/css/2.da3a6d41.chunk.css.map",
-    "static/css/main.566df26a.chunk.css.map": "/phylogenetic-map/static/css/main.566df26a.chunk.css.map",
-    "static/js/2.6289da65.chunk.js.LICENSE.txt": "/phylogenetic-map/static/js/2.6289da65.chunk.js.LICENSE.txt",
+    "static/css/main.ca72661b.chunk.css.map": "/phylogenetic-map/static/css/main.ca72661b.chunk.css.map",
+    "static/js/2.8a373430.chunk.js.LICENSE.txt": "/phylogenetic-map/static/js/2.8a373430.chunk.js.LICENSE.txt",
+    "static/media/downloadMap.svg": "/phylogenetic-map/static/media/downloadMap.abd052bd.svg",
     "static/media/github.svg": "/phylogenetic-map/static/media/github.76d344f0.svg",
     "static/media/icon.svg": "/phylogenetic-map/static/media/icon.67a5203a.svg",
     "static/media/tree.svg": "/phylogenetic-map/static/media/tree.db21f93f.svg"
@@ -21,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.0541c221.js",
     "static/css/2.da3a6d41.chunk.css",
-    "static/js/2.6289da65.chunk.js",
-    "static/css/main.566df26a.chunk.css",
-    "static/js/main.44993a33.chunk.js"
+    "static/js/2.8a373430.chunk.js",
+    "static/css/main.ca72661b.chunk.css",
+    "static/js/main.5476a3bd.chunk.js"
   ]
 }
