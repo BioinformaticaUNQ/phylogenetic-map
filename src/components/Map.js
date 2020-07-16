@@ -95,6 +95,7 @@ const Map = ({ filetreeName, locationContent, handleToogleModal }) => {
     chart.legend.width = am4core.percent(40);
     chart.legend.valign = "bottom";
     chart.legend.contentAlign = "left";
+    chart.legend.labels.template.fill = am4core.color("#fff");
 
     const legends = allLocations.map((elem) => ({
       ...elem,
