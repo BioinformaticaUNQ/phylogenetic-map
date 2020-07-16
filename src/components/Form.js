@@ -36,7 +36,7 @@ const Form = ({ generateMap }) => {
         onChange={handleLocationFile}
         accept=".json"
       />
-      <span className="btn btnPrimary" onClick={generateMap}>
+      <span className={`btn btnPrimary ${(!treefile.name || !locations.name) && "btn-disabled"}`} onClick={generateMap}>
         Generate Map
       </span>
     </div>

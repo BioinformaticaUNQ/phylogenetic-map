@@ -69,6 +69,12 @@
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
     transition: all .1s;
     text-shadow: none;
+    pointer-events: auto;
+}
+
+.btn-disabled  {
+    filter: brightness(.8);
+    pointer-events: none; 
 }
 
 .btn:hover {
