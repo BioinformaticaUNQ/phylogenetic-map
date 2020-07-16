@@ -13,7 +13,10 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-tree-graph": "^5.1.0",
-    "svg-pan-zoom": "^3.6.1"
+    "save-file": "^2.3.1",
+    "save-svg-as-png": "^1.4.17",
+    "svg-pan-zoom": "^3.6.1",
+    "svg-saver-node": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

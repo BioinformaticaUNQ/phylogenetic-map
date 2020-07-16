@@ -31,6 +31,7 @@ function App() {
       />
       {showMap ? (
         <Main
+          filetreeName={state.filetreeFileName}
           filetreeContent={state.filetreeContent}
           locationContent={state.locationContent}
           goBack={() => setShowMap(false)}

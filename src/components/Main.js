@@ -7,7 +7,7 @@ import "./Main.css";
 
 const checkContents = (filetreeContent, locationContent) => [];
 
-export default ({ filetreeContent, locationContent, goBack }) => {
+export default ({ filetreeName, filetreeContent, locationContent, goBack }) => {
   const [showModal, setShowModal] = useState(false);
   const [errors, setErrors] = useState([]);
 
@@ -20,10 +20,16 @@ export default ({ filetreeContent, locationContent, goBack }) => {
   return (
     <div className="mainContainer">
       <Map
+        filetreeName={filetreeName}
         locationContent={locationContent}
         handleToogleModal={(b) => setShowModal(b)}
       />
-      {showModal && <TreeModal filetreeContent={filetreeContent} closeModal={() => setShowModal(false)} />}
+      {showModal && (
+        <TreeModal
+          filetreeContent={filetreeContent}
+          closeModal={() => setShowModal(false)}
+        />
+      )}
     </div>
   );
 };
