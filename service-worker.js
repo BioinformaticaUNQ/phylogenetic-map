@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/phylogenetic-map/precache-manifest.9b5fad7757b0df4984f2f24ed78d1519.js"
+  "/phylogenetic-map/precache-manifest.c881b2bb7320840753ee79c3c2cebb89.js"
 );
 
 self.addEventListener('message', (event) => {
