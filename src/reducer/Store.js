@@ -10,16 +10,16 @@ const store = createStore({
       name: "",
       content: "",
     },
-    addTreefile: action((state,payload) => {
+    addTreefile: action((state, payload) => {
       state.treefile = { ...payload };
     }),
     addLocations: action((state, { name, content }) => {
-      state.locations = { name, content: JSON.parse(content) };
+      state.locations = { name, content };
     }),
     cleanFiles: action((state) => {
       state.treefile = { name: "", content: "" };
       state.locations = { name: "", content: "" };
-    })
+    }),
   },
 });
 

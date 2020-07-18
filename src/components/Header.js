@@ -9,7 +9,7 @@ import { useStoreState } from "easy-peasy";
 
   return (
     <header className="header">
-      <div className="iconContainer" onClick={restart}>
+      <div className="iconContainer" onClick={showInfo && restart}>
         <img src={icon} alt="icon" className="icon" />
         <p className="text">Phylogenetic Map!</p>
       </div>
